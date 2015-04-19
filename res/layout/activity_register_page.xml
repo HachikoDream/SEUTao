@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+    <include 
+        android:id="@+id/register_page_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/alllayout_top"/>
+
+    <LinearLayout
+        android:id="@+id/register_edittext_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_below="@id/register_page_top"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical" >
+        
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edit_register_account"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/inputview"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:hint="@string/register_phone_hint"
+            android:inputType="phone" />
+        <ImageView 
+            android:layout_alignLeft="@id/edit_register_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/phoneicon"/>
+        </RelativeLayout>
+        
+         <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        
+        <EditText
+            android:id="@+id/edit_register_password"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/inputview"
+            android:hint="@string/register_pwd_hint"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:inputType="textPassword"/>
+           <ImageView 
+            android:layout_alignLeft="@id/edit_register_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/pwdicon"/>
+         </RelativeLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/button_register_commite"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/register_button_commit"
+        android:textColor="@color/white"
+        android:layout_below="@id/register_edittext_layout"
+        android:background="@drawable/buttonshape"
+        android:textSize="18sp" />
+    
+</RelativeLayout>

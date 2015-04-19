@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="120dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/published_needs_list_item_tv_name"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp"
+        android:singleLine="true"
+        android:text="GoodsNameTest"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/main_color"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/published_view_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/published_needs_list_item_tv_name"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/viewicon" />
+
+        <TextView
+            android:id="@+id/published_needs_list_item_tv_visitCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="12"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/published_needs_list_item_pricelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/published_view_layout"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textColor="@color/red"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/published_needs_list_item_tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000"
+            android:textColor="@color/red"
+            android:paddingBottom="10dp"
+            android:paddingRight="5dp"
+            android:textSize="12sp" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/published_needs_list_item_pricelayout"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/published_needs_list_item_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="15分钟前"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/published_needs_list_item_tv_soldouttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginRight="5dp"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout 
+            android:id="@+id/published_needs_list_item_rightLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/published_view_layout"
+            android:orientation="horizontal">
+            <ImageView 
+                android:id="@+id/published_needs_list_item_btn_edit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/editicon"/>
+            <ImageView 
+                android:id="@+id/published_needs_list_item_btn_soldout"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/soldouticon"/>
+        </LinearLayout>
+    
+</RelativeLayout>

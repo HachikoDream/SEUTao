@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:id="@+id/movement_list_item_bg"
+    android:background="@color/background"
+    android:padding="15dp">
+    <ImageView 
+        android:id="@+id/movement_list_item_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+    <TextView 
+        android:id="@+id/movement_list_item_content"
+        android:layout_toRightOf="@id/movement_list_item_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您的商品得到了用户XXX的评论：。。。。"/>
+    <TextView
+        android:layout_marginTop="10dp" 
+        android:id="@+id/movement_list_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/movement_list_item_content"
+        android:textColor="@color/time_color"
+        android:text="2015-03-03 15:32:56"/>
+
+</RelativeLayout>

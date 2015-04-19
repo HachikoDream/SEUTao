@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/add_up_page_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottomlayoutbg" >
+
+        <ImageView
+            android:id="@+id/add_up_page_close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/addclose" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/add_up_page_bottom_abovecenter"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_above="@id/add_up_page_bottom"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/add_up_page_greenball"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_above="@id/add_up_page_bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@id/add_up_page_bottom_abovecenter"
+        android:src="@drawable/addgreenball" />
+
+    <ImageView
+        android:id="@+id/add_up_page_yellowball"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_above="@id/add_up_page_bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/add_up_page_bottom_abovecenter"
+        android:src="@drawable/addyellowball" />
+
+    <ImageView
+        android:id="@+id/add_up_page_upgoods_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@id/add_up_page_greenball"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_toLeftOf="@id/add_up_page_bottom_abovecenter"
+        android:src="@drawable/addgoodsicon" />
+
+    <ImageView
+         android:id="@+id/add_up_page_upwant_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@id/add_up_page_yellowball"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@id/add_up_page_bottom_abovecenter"
+        android:src="@drawable/addwanticon" />
+
+</RelativeLayout>

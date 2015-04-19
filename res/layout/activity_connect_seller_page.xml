@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:background="@color/transparent_background">
+
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="120dp"
+    android:orientation="horizontal">
+    <ImageView 
+        android:id="@+id/connect_dialog_msg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/mail"/>
+    <ImageView 
+        android:id="@+id/connect_dialog_phone"
+        android:layout_width="80dp"
+        android:layout_height="80dp" 
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/phone"/>
+    <ImageView 
+        android:id="@+id/connect_dialog_quit"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/cancel"/>
+</LinearLayout>"
+</RelativeLayout>

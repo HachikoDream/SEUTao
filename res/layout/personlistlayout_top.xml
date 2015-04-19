@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@color/main_color"
+    android:orientation="vertical" >
+<TextView 
+    android:id="@+id/listlayout_top_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="东大淘"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:textSize="20sp"
+    android:layout_centerInParent="true"/>
+<Button
+    android:id="@+id/listlayout_top_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:textColor="@color/white"
+    android:text="编辑"
+    android:layout_marginRight="10dp"
+    android:textSize="15sp"
+    android:background="@color/main_color"
+    android:layout_alignParentRight="true"/> 
+ <ImageView 
+     android:id="@+id/listlayout_top_back"
+     android:layout_width="30dp"
+     android:layout_height="60dp"
+     android:paddingLeft="20dp"
+     android:layout_centerVertical="true"
+     android:layout_alignParentLeft="true" 
+     android:src="@drawable/goback"
+     />   
+
+</RelativeLayout>

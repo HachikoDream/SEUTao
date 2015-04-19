@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+<include 
+    android:id="@+id/register_confirm_top"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    layout="@layout/alllayout_top"/>
+<TextView
+    android:id="@+id/register_tipstext"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/register_confirm_top"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:textSize="15sp"
+    android:textColor="@color/gray"
+    android:padding="10dp"/>
+    
+<EditText
+    android:id="@+id/register_confirmEdit"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="20dp"
+    android:padding="10dp"
+    android:inputType="number"
+    android:layout_below="@id/register_tipstext"
+    android:background="@drawable/inputview"
+    android:hint="@string/regiser_confirm_hint" />
+<Button
+    android:id="@+id/register_checkButton"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_below="@id/register_confirmEdit"
+    android:textColor="@color/white"
+    android:background="@drawable/yellobuttonshape"
+    android:text="@string/register_commmitword_button"/>
+
+<Button
+    android:id="@+id/register_resendButton"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_below="@id/register_checkButton"
+    android:textColor="@color/white"
+    android:background="@drawable/buttonshape"
+    android:layout_marginTop="20dp"
+    android:text="@string/register_resend_button"/>
+</RelativeLayout>

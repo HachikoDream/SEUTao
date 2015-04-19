@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/select_month_page_ll_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/personlistlayout_top" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        android:columnCount="2"
+        android:rowCount="3" >
+
+        <RadioButton
+            android:id="@+id/select_month_page_rb_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一个月"
+            android:textColor="@color/main_color" />
+
+        <RadioButton
+            android:id="@+id/select_month_page_rb_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="两个月"
+            android:textColor="@color/main_color" />
+
+        <RadioButton
+            android:id="@+id/select_month_page_rb_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_color"
+            android:text="三个月" />
+
+        <RadioButton
+            android:id="@+id/select_month_page_rb_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_color"
+            android:text="四个月" />
+
+        <RadioButton
+            android:id="@+id/select_month_page_rb_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_color"
+            android:text="五个月" />
+
+        <RadioButton
+            android:id="@+id/select_month_page_rb_six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_color"
+            android:text="六个月" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/select_month_page_btn_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/yellow"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:text="确认" />
+
+</LinearLayout>

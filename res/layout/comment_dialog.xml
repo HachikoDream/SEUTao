@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+    
+    <ImageView
+        android:id="@+id/comment_dialog_quit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/quit"/>
+    
+    <ImageView
+        android:id="@+id/comment_dialog_submit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/submit"/>
+    
+    </RelativeLayout>
+    
+    <EditText
+        android:id="@+id/comment_dialog_comment"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:minLines="2"
+        android:gravity="top"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="5dp"
+        android:inputType="text"
+        android:hint="输入评论内容"/>
+    
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CollectedPage" >
+
+    <include layout="@layout/personlistlayout_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/main_color" >
+
+            <Button
+                android:id="@+id/collected_page_btn_goods"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_color"
+                android:text="商品"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/collected_page_btn_goods_below"
+                android:layout_width="fill_parent"
+                android:layout_height="4dp"
+                android:src="@color/yellow"
+                android:layout_below="@id/collected_page_btn_goods" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/main_color" >
+
+            <Button
+                android:id="@+id/collected_page_btn_needs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_color"
+                android:text="求购"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/collected_page_btn_needs_below"
+                android:layout_width="fill_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/collected_page_btn_needs" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/collected_page_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:id="@+id/collected_page_rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main_color"
+        android:gravity="center_vertical" >
+
+        <CheckBox
+            android:id="@+id/collected_page_cb_selectall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="全选"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/collected_page_btn_delete"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/main_color"
+            android:text="删除"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

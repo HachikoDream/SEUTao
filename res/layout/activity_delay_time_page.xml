@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".DelayTimePage" >
+    
+<include 
+    layout="@layout/personlistlayout_top"/>
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	     <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/main_color" >
+
+            <Button
+                android:id="@+id/delay_time_page_btn_goods"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_color"
+                android:text="商品"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/delay_page_btn_goods_below"
+                android:layout_width="fill_parent"
+                android:layout_height="4dp"
+                android:src="@color/yellow"
+                android:layout_below="@id/delay_time_page_btn_goods" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/main_color" >
+
+            <Button
+                android:id="@+id/delay_time_page_btn_needs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_color"
+                android:text="求购"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/delay_page_btn_needs_below"
+                android:layout_width="fill_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/delay_time_page_btn_needs" />
+        </RelativeLayout>
+
+
+	</LinearLayout>
+	
+    <android.support.v4.view.ViewPager
+        android:id="@+id/delay_time_page_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:id="@+id/delay_time_page_rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main_color"
+        android:gravity="center_vertical" >
+
+       
+        <CheckBox
+            android:id="@+id/delay_time_page_cb_selectall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:text="全选" />
+
+
+    </RelativeLayout>
+	
+</LinearLayout>

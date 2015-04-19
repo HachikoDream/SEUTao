@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+	android:id="@+id/dialog_select_delaytime_ll_dialog">
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:rowCount="3"
+        android:columnCount="2">
+        
+	    <RadioButton
+	        android:id="@+id/dialog_select_delaytime_rb_one"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="一个月" />
+	    <RadioButton
+	        android:id="@+id/dialog_select_delaytime_rb_two"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="两个月" />
+	    <RadioButton
+	        android:id="@+id/dialog_select_delaytime_rb_three"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="三个月" />
+	    <RadioButton
+	        android:id="@+id/dialog_select_delaytime_rb_four"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="四个月" />
+	    <RadioButton
+	        android:id="@+id/dialog_select_delaytime_rb_five"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="五个月" />
+	    <RadioButton
+	        android:id="@+id/dialog_select_delaytime_rb_six"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="六个月" />
+    </GridLayout>
+
+</LinearLayout>

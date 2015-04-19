@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eeeeee"
+    tools:context=".GoodsListPage" >
+
+  <include layout="@layout/alllayout_top"/>
+
+    <LinearLayout
+        android:id="@+id/goods_list_page_bar"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="47dp"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/goods_list_page_zonghe"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:background="@color/white"
+            android:text="综 合"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/goods_list_page_time"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:background="@color/tab_color"
+            android:text="时 间"
+            android:textColor="@color/up_text"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/goods_list_page_price"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:background="@color/tab_color"
+            android:text="价 格"
+            android:textColor="@color/up_text"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/goods_list_page_redu"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:background="@color/tab_color"
+            android:text="热 度"
+            android:textColor="@color/up_text"
+            android:textSize="20sp" />
+    </LinearLayout>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/goods_list_page_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+>
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
